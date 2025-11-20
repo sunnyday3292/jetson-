@@ -1,0 +1,20 @@
+[0;1;32m●[0m hostapd.service - Advanced IEEE 802.11 AP and IEEE 802.1X/WPA/WPA2/EAP Authenticator
+     Loaded: loaded (/lib/systemd/system/hostapd.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Mon 2025-09-29 14:24:30 CST; 18h ago
+    Process: 2305816 ExecStart=/usr/sbin/hostapd -B -P /run/hostapd.pid -B $DAEMON_OPTS ${DAEMON_CONF} (code=exited, status=0/SUCCESS)
+   Main PID: 2305817 (hostapd)
+      Tasks: 1 (limit: 36388)
+     Memory: 644.0K
+     CGroup: /system.slice/hostapd.service
+             └─2305817 /usr/sbin/hostapd -B -P /run/hostapd.pid -B /etc/hostapd/hostapd.conf
+
+Sep 29 14:24:30 dcclabjetson systemd[1]: Started Advanced IEEE 802.11 AP and IEEE 802.1X/WPA/WPA2/EAP Authenticator.
+Sep 29 14:25:12 dcclabjetson hostapd[2305817]: wlan0: STA ba:2a:c9:2e:83:dd IEEE 802.11: associated
+Sep 29 14:25:13 dcclabjetson hostapd[2305817]: wlan0: STA ba:2a:c9:2e:83:dd RADIUS: starting accounting session 80E6BA5CFF8D98C9
+Sep 29 14:25:13 dcclabjetson hostapd[2305817]: wlan0: STA ba:2a:c9:2e:83:dd WPA: pairwise key handshake completed (RSN)
+Sep 29 14:49:26 dcclabjetson hostapd[2305817]: wlan0: STA ba:2a:c9:2e:83:dd IEEE 802.11: disassociated
+Sep 29 15:50:26 dcclabjetson hostapd[2305817]: wlan0: STA ba:2a:c9:2e:83:dd IEEE 802.11: associated
+Sep 29 15:50:26 dcclabjetson hostapd[2305817]: wlan0: STA ba:2a:c9:2e:83:dd RADIUS: starting accounting session BDF264C400D910B5
+Sep 29 15:50:26 dcclabjetson hostapd[2305817]: wlan0: STA ba:2a:c9:2e:83:dd WPA: pairwise key handshake completed (RSN)
+Sep 29 15:58:44 dcclabjetson hostapd[2305817]: wlan0: STA ba:2a:c9:2e:83:dd IEEE 802.11: disassociated due to inactivity
+Sep 29 15:58:44 dcclabjetson hostapd[2305817]: wlan0: STA ba:2a:c9:2e:83:dd IEEE 802.11: disassociated
